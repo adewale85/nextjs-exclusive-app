@@ -1,7 +1,9 @@
 "use client";
-import Image from "next/image";
+
+
+import HeroSection from "./components/HeroSection/HeroSection";
 import Sidebar from "./components/Sidebar/Sidebar";
-import Banner from "./components/Banner/Banner";
+
 
 
 export default function Home() {
@@ -10,7 +12,7 @@ export default function Home() {
       
       <div className="flex">
       <Sidebar/>
-      <Banner/>
+      <HeroSection/>
       </div>
     </main>
   );

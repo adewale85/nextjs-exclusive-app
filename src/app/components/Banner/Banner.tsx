@@ -1,10 +1,6 @@
-
-
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-// Just store the strings here. 
-// Note: Ensure these images are actually in your /public/images/ folder!
 const HeroFrameData = [
   { id: 1, image: "/images/iphone1.svg" },
   { id: 2, image: "/images/iphone 1.jpg" },
@@ -20,34 +16,34 @@ function Banner() {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === HeroFrameData.length - 1 ? 0 : prev + 1));
     }, 3000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className='space-y-4 w-full max-w-230 mx-auto py-4'>
+    // Removed max-w-230 and extra padding to let the HeroSection control the layout
+    <div className='w-full h-full flex flex-col justify-center '>
         {/* Main Image Container */}
-        <div className='relative w-full h-80 overflow-hidden rounded-sm bg-black'>
+        <div className='relative w-70 h-90 md:h-88 overflow-hidden'>
           <Image 
-            // We pull the string path from our data array
             src={HeroFrameData[currentIndex].image} 
             alt={`Slide ${currentIndex + 1}`} 
             fill 
             priority 
-            className='size-12'
-            sizes="w-20 h-auto"
+            // objectFit: "contain" ensures the phone isn't cropped. 
+            // Use "cover" if you want the image to bleed to the edges.
+            className='object-contain scale-105 md:scale-110' 
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 
-        {/* Indicators (Dots) */}
-        <div className='flex gap-3 items-center mb-3 justify-center'>
+        {/* Indicators (Dots) - Positioned absolutely so they don't push the black background down */}
+        <div className='flex gap-5 items-center justify-center -mt-7.5 z-10 mb-2'>
             {HeroFrameData.map((_, index) => (
                 <button 
                   key={index} 
                   type="button"
-                  aria-label={`Go to slide ${index + 1}`}
                   className={`transition-all duration-300 rounded-full cursor-pointer 
-                    ${currentIndex === index ? "bg-red-500 w-6 h-3" : "bg-gray-400 size-3"}`} 
+                    ${currentIndex === index ? "bg-[#dB4444] w-3 h-3 border-2 border-white" : "bg-gray-400 size-3"}`} 
                   onClick={() => setCurrentIndex(index)}
                 />
             ))}

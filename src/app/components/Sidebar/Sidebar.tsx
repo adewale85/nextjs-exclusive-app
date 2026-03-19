@@ -18,6 +18,8 @@ function Sidebar() {
     "laptops",
     "mens-shirts",
     "mens-shoes",
+    "mens-watches",
+   
   ];
 
   return (
@@ -27,7 +29,7 @@ function Sidebar() {
   </button>
 
       <div className={`lg:border-r-[0.5px]  ${isOpen ? "block" : "hidden"} lg:block overflow-y-auto lg:bg-[#ffffff] bg-[#F5F5f5] z-50 lg:p-4 p-5 lg:gap-12 gap-2`}>
-    <ul className="space-y-3 ">
+    <ul className="space-y-2.5 ">
       {categories.map((category, index) => (
         <li
           key={category}
