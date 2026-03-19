@@ -1,6 +1,7 @@
-"use client";
+
 import Image from 'next/image';
 import { useCountdown } from '@/../src/app/utils/useCountdown';
+import Products from '../Products/Products';
 
 function Flashare() {
   const { days, hours, minutes, seconds } = useCountdown("2026-12-01");
@@ -67,6 +68,8 @@ function Flashare() {
         </div>
 
       </div>
+
+      <Products />
     </div>
   );
 }
