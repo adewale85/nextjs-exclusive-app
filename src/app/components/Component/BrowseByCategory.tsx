@@ -3,6 +3,7 @@ import { browseByCategoryData } from "@/constants/category";
 
 export default function CategoryList() {
   return (
+    <main className="py-12">
     <div className="grid lg:grid-cols-6 grid-cols-2 gap-4 items-center justify-between py-10 lg:py-20 lg:space-y-0 space-y-6">
       {browseByCategoryData.map((category) => (
         <div 
@@ -22,8 +23,13 @@ export default function CategoryList() {
             />
           </div>
           <p className="font-poppins font-medium text-base">{category.title}</p>
+        
         </div>
+        
       ))}
+         
     </div>
+    <div className="border-b-[0.5px] "></div>
+    </main>
   );
 }
