@@ -2,6 +2,7 @@
 
 
 
+import BrowseByCategory from "./components/Component/BrowseByCategory";
 import Flashare from "./components/Component/Flashare";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection/>
       </div>
       <Flashare/>
+       <BrowseByCategory/> 
     </main>
   );
 }

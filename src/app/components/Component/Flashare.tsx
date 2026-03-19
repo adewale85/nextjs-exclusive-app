@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import { useCountdown } from '@/../src/app/utils/useCountdown';
 import Products from '../Products/Products';
+import Link from 'next/link';
 
 function Flashare() {
   const { days, hours, minutes, seconds } = useCountdown("2026-12-01");
@@ -70,6 +71,18 @@ function Flashare() {
       </div>
 
       <Products />
+
+      {/* View All */}
+      <div className="flex items-center justify-center py-15 lg:py-20">
+        <Link href="/EveryProduct">
+          <button className="w-[234px]  h-14 bg-primary rounded-sm text-white text-[16px] font-medium">
+            View All Products
+          </button>
+        </Link>
+      </div>
+
+      {/* Divider */}
+      <div className="border-b-[0.5px] opacity-30"></div>
     </div>
   );
 }
