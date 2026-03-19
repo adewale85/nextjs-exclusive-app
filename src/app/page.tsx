@@ -1,6 +1,8 @@
 "use client";
 
 
+
+import Flashare from "./components/Component/Flashare";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Sidebar from "./components/Sidebar/Sidebar";
 
@@ -14,6 +16,7 @@ export default function Home() {
       <Sidebar/>
       <HeroSection/>
       </div>
+      <Flashare/>
     </main>
   );
 }
