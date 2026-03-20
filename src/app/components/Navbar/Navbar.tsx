@@ -16,7 +16,8 @@ function Navbar() {
     { name: "Home", href: "/" },
     { name: "Contact", href: "/Contact" },
     { name: "About", href: "/about" },
-    { name: "Sign Up", href: "/signup" },
+    { name: "Sign Up", href: "/auth/sign-up" },
+   
   ];
 
   return (

@@ -5,9 +5,7 @@ import { PeopleSectionData } from "@/constants/People'sSection";
 import Image from "next/image";
 import Link from "next/link";
 
-
-
-function page() {
+function About() {
   return (
     <main className="Wrapper py-12 px-4 lg:px-0">
       <div>
@@ -42,7 +40,13 @@ function page() {
             </p>
           </div>
           <div>
-            <Image src="/images/SlideImage" alt="" className="w-[750px]" />
+            <Image
+              src="/images/Side Image (1).svg"
+              alt=""
+              width={80}
+              height={80}
+              className="w-[750px]"
+            />
           </div>
         </div>
       </div>
@@ -55,7 +59,7 @@ function page() {
               className="w-full lg:w-[270px] h-[230px] flex items-center justify-center rounded-sm border-[#0000004D] border shadow-sm"
             >
               <div className="flex flex-col items-center justify-center text-center">
-                <Image src={image} alt="" className="size-20" />
+                <Image src={image} alt="" width={80} height={80} className="" />
                 <p className="font-inter font-bold text-[32px]">{title}</p>
                 <p className="font-poppins text-[16px]">{subTitle}</p>
               </div>
@@ -70,7 +74,9 @@ function page() {
               title,
               subTitle,
               image,
-              
+              twitterImg,
+              instagramImg,
+              linkdinImg,
             }) => (
               <div
                 key={id}
@@ -80,7 +86,13 @@ function page() {
                   className="
        flex items-center justify-center pt-8.5"
                 >
-                  <Image src={image} alt="" className="" />
+                  <Image
+                    src={image}
+                    alt=""
+                    width={200}
+                    height={200}
+                    className=""
+                  />
                 </div>
                 <div className="space-y-2 p-5">
                   <h2 className="font-inter font-medium text-[32px] leading-7.5 tracking-[4%]">
@@ -90,24 +102,9 @@ function page() {
                     {subTitle}
                   </p>
                   <div className="flex gap-3 text-red-400">
-                    <Image
-                      src="/images/twitterImg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                    <Image
-                      src="/images/instagramImg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
-                    <Image
-                      src="/images/linkdinImg"
-                      alt=""
-                      width={20}
-                      height={20}
-                    />
+                    <Image src={twitterImg} alt="" width={32} height={32} />
+                    <Image src={instagramImg} alt="" width={32} height={32} />
+                    <Image src={linkdinImg} alt="" width={32} height={32} />
                   </div>
                 </div>
               </div>
@@ -134,7 +131,13 @@ function page() {
             className=" flex flex-col items-center justify-center"
           >
             <div>
-              <Image src={image} alt="Delivery-icon" className="size-20 pb-5" />
+              <Image
+                src={image}
+                alt="Delivery-icon"
+                width={80}
+                height={80}
+                className="size-20 pb-5"
+              />
             </div>
             <div className="flex flex-col items-center justify-center">
               <div className="">
@@ -155,4 +158,4 @@ function page() {
   );
 }
 
-export default page;
+export default About;

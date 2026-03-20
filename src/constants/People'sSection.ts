@@ -1,9 +1,4 @@
-import TomCruise from "../assets/Tom Cruise.svg"
-import EmmaWatson from "../assets/Emma Watson.svg"
-import WillSmith from "../assets/Will Smith.svg"
-import twitter from "../assets/Twitter.svg"
-import intagram from "../assets/instagram.svg"
-import linkdin from "../assets/Linkedin.svg"
+
 
 
 interface PeopleSectionProps
@@ -21,32 +16,32 @@ interface PeopleSectionProps
 export const PeopleSectionData : PeopleSectionProps [] = [
     {
         id: 1,
-    image:TomCruise ,
+    image: "/images/Tom Cruise.svg",
     title: 'Tom Cruise',
     subTitle: 'Founder & Chairman',
-    twitterImg: twitter,
-    instagramImg: intagram,
-    linkdinImg: linkdin,
+    twitterImg: "/images/Twitter.svg",
+    instagramImg: "/images/instagram.svg",
+    linkdinImg: "/images/Linkedin.svg",
     },
 
     {
         id: 2,
-    image:EmmaWatson,
+    image: "/images/Emma Watson.svg",
     title: 'Emma Watson',
     subTitle: 'Managing Director',
-    twitterImg: twitter,
-    instagramImg: intagram,
-    linkdinImg: linkdin,
+    twitterImg: "/images/Twitter.svg",
+    instagramImg: "/images/instagram.svg",
+    linkdinImg: "/images/Linkedin.svg",
     },
 
     {
         id: 3,
-    image:WillSmith,
+    image: "/images/Will Smith.svg",
     title: 'Will Smith',
     subTitle: 'Product Designer',
-  twitterImg: twitter,
-    instagramImg: intagram,
-    linkdinImg: linkdin,
+  twitterImg: "/images/Twitter.svg",
+    instagramImg: "/images/instagram.svg",
+    linkdinImg: "/images/Linkedin.svg",
     }
 
 ]

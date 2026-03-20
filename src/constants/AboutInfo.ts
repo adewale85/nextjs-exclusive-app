@@ -1,8 +1,5 @@
 
-import SallerActive from '../assets/Sallers active.svg'
-import ProduductSale from '../assets/Produduct Sale.svg'
-import Customeractive from '../assets/Customer active.svg'
-import AnnualSale from '../assets/AnnualSale.svg'
+
 
 interface AboutInfoprops {
     id: number;
@@ -15,25 +12,25 @@ interface AboutInfoprops {
 export const AboutInfopropsData: AboutInfoprops [] = [
 {
     id: 1,
-    image:SallerActive,
+    image:"/images/Sallers active.svg",
     title: '10.5k',
     subTitle: 'Sallers active our site',
 },
 {
     id: 2,
-    image:ProduductSale,
+    image:"/images/Produduct Sale.svg",
     title: '33k',
-    subTitle: 'Mopnthly Produduct Sale',
+    subTitle: 'Monthly Produduct Sale',
 },
 {
     id: 3,
-    image:Customeractive,
+    image:"/images/Customer active.svg",
     title: '45.5k',
     subTitle: 'Customer active in our site',
 },
 {
     id: 4,
-    image:AnnualSale,
+    image:"/images/AnnualSale.svg",
     title: '25k',
     subTitle: 'Annual gross sale in our site',
 },
