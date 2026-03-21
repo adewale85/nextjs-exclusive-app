@@ -43,7 +43,7 @@ const ExploreOurProducts = () => {
     const fetchProducts = async () => {
       setLoading(true);
       try {
-        const response = await fetch("https://dummyjson.com/products");
+        const response = await fetch("https://dummyjson.com/product");
         if (!response.ok) throw new Error("Failed to fetch");
         const result = await response.json();
         setData(result);

@@ -74,7 +74,7 @@ function Flashare() {
 
       {/* View All */}
       <div className="flex items-center justify-center py-15 lg:py-20">
-        <Link href="/EveryProduct">
+        <Link href="/allProducts">
           <button className="w-[234px]  h-14 bg-primary rounded-sm text-white text-[16px] font-medium">
             View All Products
           </button>

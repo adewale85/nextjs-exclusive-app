@@ -1,4 +1,4 @@
-"use client";
+
 import { AboutInfopropsData } from "@/constants/AboutInfo";
 import { NewArrivalData } from "@/constants/Arrival";
 import { PeopleSectionData } from "@/constants/People'sSection";

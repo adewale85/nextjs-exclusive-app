@@ -47,7 +47,7 @@ const BestSellingProducts = () => {
       setLoading(true)
       setError("")
       try {
-        const response = await fetch("https://dummyjson.com/products")
+        const response = await fetch("https://dummyjson.com/product")
         if (!response.ok) {
           throw new Error("Something went wrong")
         }
