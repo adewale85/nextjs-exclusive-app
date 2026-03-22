@@ -134,9 +134,9 @@ const ExploreOurProducts = () => {
         ))}
       </div>
 
-      <div className="flex justify-center py-12">
-        <Link href="/EveryProduct">
-          <button className="bg-red-500 text-white px-10 py-4 rounded-sm hover:bg-red-600 transition-colors">
+     <div className="flex items-center justify-center py-15 lg:py-20">
+        <Link href="/allProducts">
+          <button className="w-[234px]  h-14 bg-primary rounded-sm text-white text-[16px] font-medium">
             View All Products
           </button>
         </Link>

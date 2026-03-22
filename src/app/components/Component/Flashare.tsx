@@ -15,9 +15,9 @@ function Flashare() {
   );
 
   return (
-    <div className=" lg:px-0 px-4 py-10">
+    <div className=" lg:px-0  lg:pt-20 pt-20">
       {/* Main Row */}
-      <div className="flex flex-col lg:flex-row lg:items-end gap-10 md:gap-20">
+      <div className="flex flex-col lg:flex-row lg:items-end lg:gap-20 gap-8 ">
         
         {/* 1. Title Section */}
         <div className="space-y-4">
@@ -82,7 +82,7 @@ function Flashare() {
       </div>
 
       {/* Divider */}
-      <div className="border-b-[0.5px] opacity-30"></div>
+      <div className="border-b-[0.5px] opacity-30  mb-12"></div>
     </div>
   );
 }
