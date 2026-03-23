@@ -35,7 +35,7 @@ export default function RootLayout({
         <Toaster position="top-right" reverseOrder={false} />
         <WishListProvider>
           <CartProvider>
-            <div className="Wrapper lg:px-0 px-4">
+            <div className="Wrapper ">
               <Navbar />
               <main>{children}</main>
             </div>

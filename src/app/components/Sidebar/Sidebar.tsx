@@ -24,7 +24,7 @@ function Sidebar() {
 
   return (
     <div className='lg:w-53.5 w-75 h-78.5 lg:relative absolute z-50 '>
-       <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden block">
+    <button onClick={() => setIsOpen(!isOpen)} className="">
     {isOpen ? < IoMdClose className="size-8 bg-white "/> : <MdOutlineFilterList className="size-8 bg-white "/>}
   </button>
 

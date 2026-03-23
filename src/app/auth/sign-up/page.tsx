@@ -126,14 +126,14 @@ function SignUpPage() {
             {/* Login Redirect */}
             <div className="flex items-center justify-center gap-4 pt-4">
               <p className="text-gray-600">Already have an account?</p>
-              <Link href="/login" className="font-medium border-b border-gray-500 hover:text-red-500 transition-colors">
-                Log in
+              <Link href="/auth/login" className="font-medium border-b border-gray-500 hover:text-red-500 transition-colors">
+                Login
               </Link>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
   );
 }
 

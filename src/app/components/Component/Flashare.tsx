@@ -15,7 +15,7 @@ function Flashare() {
   );
 
   return (
-    <div className=" lg:px-0  lg:pt-20 pt-20">
+    <div className="  lg:pt-20 pt-20 lg:px-0 px-4 ">
       {/* Main Row */}
       <div className="flex flex-col lg:flex-row lg:items-end lg:gap-20 gap-8 ">
         

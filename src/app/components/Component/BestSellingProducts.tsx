@@ -73,7 +73,7 @@ const BestSellingProducts = () => {
   if (error) return <p className="text-center text-red-500 py-10">{error}</p>
 
   return (
-    <main className="my-12 px-4 Wrapper">
+    <main className="lg:my-12 Wrapper lg:px-0 px-4">
      <div className="lg:pb-0 pb-10">
        <div className='flex gap-3 items-center lg:mb-5 mb-2'>
         <div className='lg:w-5 w-3 lg:h-10 h-8 bg-red-500 rounded-lg'></div>

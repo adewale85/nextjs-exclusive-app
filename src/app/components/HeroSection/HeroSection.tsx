@@ -7,10 +7,10 @@ function HeroSection() {
   return (
     <div className="relative pt-3 pl-6">
      
-      <div className="flex md:flex-row flex-col lg:w-236 w-full min-h-85 bg-black justify-between items-center">
+      <div className="flex lg:flex-row flex-col lg:w-236 w-full min-h-85 bg-black justify-between items-center">
         
         {/* Left Side: Text Content */}
-        <div className="md:p-12 p-6 space-y-10">
+        <div className="lg:p-12 p-6 space-y-10">
           <div className="flex gap-8 items-center">
             <Image
               src="/images/Apple_logo.svg" 
@@ -31,7 +31,7 @@ function HeroSection() {
           </div>
 
           <div>
-            <Link href="/EveryProduct">
+            <Link href="/allProducts">
               <div className="font-poppins font-medium text-base leading-6 text-[#FAFAFA] flex items-center gap-5 cursor-pointer">
                 Shop Now
                 <span>
@@ -43,7 +43,7 @@ function HeroSection() {
         </div>
 
         {/* Right Side: Banner */}
-        <div className="flex items-center justify-center md:pr-12 ">
+        <div className="flex items-center justify-center lg:pr-12 ">
           <Banner />
         </div>
         

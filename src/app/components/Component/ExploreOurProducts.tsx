@@ -60,7 +60,7 @@ const ExploreOurProducts = () => {
   if (loading) return <p className="text-center py-10">Loading...</p>;
 
   return (
-    <section className="max-w-[1170px] mx-auto px-4 py-16">
+    <section className="max-w-[1170px] py-16 lg:px-0 px-4">
       <div className="flex gap-3 items-center mb-4">
         <div className="w-5 h-10 bg-red-500 rounded-sm"></div>
         <span className="text-red-500 font-semibold">Our Products</span>
@@ -68,7 +68,7 @@ const ExploreOurProducts = () => {
       <h2 className="text-3xl font-bold mb-10">Explore Our Products</h2>
 
       {/* Grid for all products */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:py-20 py-15 items-center justify-center">
         {data?.products.slice(10, 18).map((product: Product) => (
           <div key={product.id} className="group flex flex-col gap-3">
             
@@ -101,9 +101,11 @@ const ExploreOurProducts = () => {
               </div>
 
               {/* Product Thumbnail */}
+              <div className="absolute inset-0 m-auto lg:w-[190px] w-full h-[180px] flex items-center justify-center">
               <Link href={`/product/${product.id}`}>
                 <Image src={product.thumbnail} alt={product.title} width={150} height={150} className="object-contain" />
               </Link>
+              </div>
 
               {/* ADD TO CART BUTTON (Fixed) */}
               <button 
