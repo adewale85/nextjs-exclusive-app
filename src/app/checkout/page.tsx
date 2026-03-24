@@ -150,7 +150,7 @@ function Page() {
               <Image
                 src={item.thumbnail}
                 alt={item.title}
-                width={54}p
+                width={54}
                 height={54}
               />
 
