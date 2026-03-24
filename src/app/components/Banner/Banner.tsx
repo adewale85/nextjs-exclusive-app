@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const HeroFrameData = [
-  { id: 1, image: "/images/iPhone1.svg" },
+  { id: 1, image: "/images/iPhone1.jpg" },
   { id: 2, image: "/images/iPhone5.jpg" },
   { id: 3, image: "/images/iPhone2.jpg" },
   { id: 4, image: "/images/iPhone3.jpg" },

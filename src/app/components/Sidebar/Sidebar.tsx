@@ -9,7 +9,7 @@ function Sidebar() {
   const categories = [
     "beauty", "fragrances", "furniture", "groceries",
     "home-decoration", "women-shoes", "laptops",
-    "mens-shirts", "mens-shoes", "mens-watches",
+    "mens-shirts", "mens-shoes", "mens-watches", "table", 
   ];
 
   return (
