@@ -166,17 +166,17 @@ function Cart() {
         ))}
       </div>
 
-     <div className="py-30 flex justify-between">
-         <div className=" flex gap-16">
-        <div className="w-[300px] h-[56px] rounded-sm border flex items-center pl-4">
+     <div className="py-30 flex lg:flex-row flex-col justify-between lg:px-0 px-4">
+         <div className=" flex lg:flex-row flex-col lg:gap-16 gap-8 ">
+        <div className="lg:w-[300px] w-full h-[56px] rounded-sm border flex  items-center pl-4">
           <p className="font-poppins font-normal text-[16px] leading-6">Coupon Code</p>
         </div>
-        <button className="w-[211px] h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
+        <button className="lg:w-[211px] h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
         Apply Coupon
         </button>
       </div>
 
-      <div className="w-[470px] h-[324px] border-[1.5px]  space-y-6 p-8 ">
+      <div className="lg:w-[470px] w-full h-[324px] border-[1.5px]  space-y-6 p-8 mt-12">
         <h3 className="font-poppins font-medium text-[20px] leading-7">Cart Total</h3>
         <div className="flex items-center justify-between border-b">
             <p className="font-poppins font-normal text-[16px] leading-6">Shipping:</p>
@@ -191,7 +191,7 @@ function Cart() {
             <p className="font-poppins font-normal text-[16px] leading-6">${cartTotal.toFixed(2)}</p>
         </div>
         <Link href={'/checkout'}>
-         <button className="w-[260px] h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
+         <button className="lg:w-[260px] w-full h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
         Apply Coupon
         </button>
         </Link>
