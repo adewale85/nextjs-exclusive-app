@@ -43,7 +43,7 @@ function AllProductDetails() {
   };
 
   const handleAddCart = (product: Product) => {
-    addToCart({ ...product, quantity });
+    addToCart({ ...product,  });
     toast.success(`${product.title} added to cart!`);
   };
 
