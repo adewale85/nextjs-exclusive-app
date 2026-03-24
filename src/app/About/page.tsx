@@ -12,7 +12,7 @@ function About() {
         <div className="lg:px-0 px-12 flex gap-3">
           <Link href={"/"}>
             <p className="font-poppins font-normal text-sm leading-5 text-[#818181]">
-              Home /{" "}
+              Home /
             </p>
           </Link>
           <Link href={"/about"}>
@@ -41,7 +41,7 @@ function About() {
           </div>
           <div>
             <Image
-              src="/images/Side Image (1).svg"
+              src="/images/side-image.svg"
               alt=""
               width={80}
               height={80}

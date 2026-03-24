@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 const HeroFrameData = [
-  { id: 1, image: "/images/iphone1.svg" },
-  { id: 2, image: "/images/iphone 1.jpg" },
-  { id: 3, image: "/images/iphone 2.jpg" },
-  { id: 4, image: "/images/iphone 3.jpg" },
-  { id: 5, image: "/images/iphone 4.jpg" },
+  { id: 1, image: "/images/iPhone1.svg" },
+  { id: 2, image: "/images/iPhone5.jpg" },
+  { id: 3, image: "/images/iPhone2.jpg" },
+  { id: 4, image: "/images/iPhone3.jpg" },
+  { id: 5, image: "/images/iPhone4.jpg" },
 ];
 
 function Banner() {
