@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 function HeroSection() {
   return (
-    <div className="relative pt-3 pl-6">
+    <div className="relative lg:pt-3 lg:pl-4 ">
      
-      <div className="flex lg:flex-row flex-col lg:w-236 w-full min-h-85 bg-black justify-between items-center">
+      <div className="flex lg:flex-row flex-col lg:w-224 w-full min-h-50 bg-black justify-between items-center">
         
         {/* Left Side: Text Content */}
         <div className="lg:p-12 p-6 space-y-10">
@@ -52,4 +52,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection;
+export default HeroSection; 

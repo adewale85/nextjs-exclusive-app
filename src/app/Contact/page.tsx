@@ -7,8 +7,8 @@ import Link from "next/link"
 function page() {
   return (
     <div>
-        <section className='Wrapper py-12'>
-        <div className='lg:px-0 px-12 flex gap-3'>
+        <section className='py-12 Wrapper'>
+        <div className='lg:px-0 px-12 flex gap-3 pb-12 '>
             <Link href={"/"}>
             <p className='font-poppins font-normal text-sm leading-5 text-[#818181]'>Home / </p>
             </Link>
@@ -17,8 +17,8 @@ function page() {
             </Link>
         </div>
 
-    <div className='flex lg:flex-row flex-col gap-8 items-center justify-center'>
-       <div className=' w-full h-[457px] bg-white shadow flex items-center justify-center my-12'>
+    <div className=' flex lg:flex-row flex-col gap-8 items-center justify-center'>
+       <div className=' w-full h-[457px] bg-white shadow flex items-center justify-center '>
        <div>
          <div className='border-b py-6'>
         <div className='flex item gap-6 items-center py-4'>
@@ -56,8 +56,8 @@ function page() {
             </div>
         </div>
 
-        <div className='h-[207px] bg-[#f5F5F5] '>
-           <input type="text" placeholder='Your Message' className='p-4 w-[637px] h-[207px] '/> 
+        <div className='lg:w-[937px] w-[300] h-[207px] bg-[#f5F5F5] '>
+           <input type="text" placeholder='Your Message' className='p-4 lg:w-[937px] w-[300] h-[207px]'/> 
         </div>
 
            <div className='flex lg:items-end items-center lg:justify-end justify-center'>

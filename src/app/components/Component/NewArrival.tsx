@@ -15,9 +15,9 @@ function NewArrival() {
   if (!mounted) return null;
 
   return (
-    <div className="max-w-[1170px] mx-auto px-4 md:px-0">
+    <div className="max-w-[1170px]  px-4 lg:px-0">
       {/* Header Section */}
-      <div className="py-10">
+      <div className="py-8">
         <div className="flex gap-3 items-center">
           <div className="w-5 h-10 bg-red-500 rounded-md"></div>
           <div className="font-poppins font-semibold text-base text-[#db4444]">
@@ -46,7 +46,7 @@ function NewArrival() {
             <p className="text-xs md:text-sm mt-2 max-w-[250px] text-gray-300">
               Black and White version of the PS5 coming out on sale.
             </p>
-            <Link href="/EveryProduct">
+            <Link href="/allProducts">
               <button className="mt-4 font-medium border-b border-gray-400 hover:text-white transition-colors">
                 Shop Now
               </button>
@@ -71,7 +71,7 @@ function NewArrival() {
               <p className="text-xs md:text-sm mt-2 max-w-[200px] text-gray-300">
                 Featured woman collections that give you another vibe.
               </p>
-              <Link href="/EveryProduct">
+              <Link href="/allProducts">
                 <button className="mt-3 font-medium border-b border-gray-400 hover:text-white">
                   Shop Now
                 </button>
@@ -87,7 +87,7 @@ function NewArrival() {
               <div className="absolute left-6 bottom-6 text-white z-10">
                 <h2 className="text-lg md:text-xl font-semibold">Speakers</h2>
                 <p className="text-xs mt-1 text-gray-300">Amazon wireless speakers</p>
-                <Link href="/EveryProduct">
+                <Link href="/allProducts">
                   <button className="mt-2 text-sm border-b border-gray-400 hover:text-white">Shop Now</button>
                 </Link>
               </div>
@@ -99,7 +99,7 @@ function NewArrival() {
               <div className="absolute left-6 bottom-6 text-white z-10">
                 <h2 className="text-lg md:text-xl font-semibold">Perfume</h2>
                 <p className="text-xs mt-1 text-gray-300">GUCCI INTENSE OUD EDP</p>
-                <Link href="/EveryProduct">
+                <Link href="/allProducts">
                   <button className="mt-2 text-sm border-b border-gray-400 hover:text-white">Shop Now</button>
                 </Link>
               </div>
@@ -109,16 +109,16 @@ function NewArrival() {
       </div>
 
       {/* Footer Features */}
-      <div className="py-24 flex flex-wrap gap-10 md:gap-20 items-center justify-center">
+      <div className="py-28 flex flex-wrap gap-10 lg:gap-20 items-center justify-center">
         {NewArrivalData.map(({ id, image, title, subTitle }) => (
-          <div key={id} className="flex flex-col items-center text-center max-w-[250px]">
+          <div key={id} className="flex flex-col items-center text-center max-w-[350px]">
             <div className="bg-gray-300 p-2 rounded-full mb-4">
                <div className="bg-black p-3 rounded-full flex items-center justify-center">
                   <Image src={image} alt="icon" width={40} height={40} className="invert" />
                </div>
             </div>
-            <h3 className="font-bold text-xl uppercase font-poppins">{title}</h3>
-            <p className="text-sm text-black">{subTitle}</p>
+            <h3 className="font-poppins font-semibold text-[20px] leading-7">{title}</h3>
+            <p className="font-poppins font-normal text-sm leading-5">{subTitle}</p>
           </div>
         ))}
       </div>

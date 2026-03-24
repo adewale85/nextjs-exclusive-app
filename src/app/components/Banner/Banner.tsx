@@ -20,7 +20,7 @@ function Banner() {
   }, []);
 
   return (
-    // Removed max-w-230 and extra padding to let the HeroSection control the layout
+   
     <div className='w-full h-full flex flex-col justify-center '>
         {/* Main Image Container */}
         <div className='relative w-70 h-90 md:h-88 overflow-hidden'>
@@ -29,14 +29,13 @@ function Banner() {
             alt={`Slide ${currentIndex + 1}`} 
             fill 
             priority 
-            // objectFit: "contain" ensures the phone isn't cropped. 
-            // Use "cover" if you want the image to bleed to the edges.
+        
             className='object-contain scale-105 md:scale-110' 
             sizes="(max-width: 768px) 100vw, 50vw"
           />
         </div>
 
-        {/* Indicators (Dots) - Positioned absolutely so they don't push the black background down */}
+        {/* Indicators (Dots)  */}
         <div className='flex gap-5 items-center justify-center -mt-7.5 z-10 mb-2'>
             {HeroFrameData.map((_, index) => (
                 <button 

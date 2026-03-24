@@ -18,7 +18,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col  ">
       
       <div className="flex">
-      <Sidebar/>
+     <div className="lg:block hidden">
+       <Sidebar/>
+     </div>
       <HeroSection/>
       </div>
       <Flashare/>

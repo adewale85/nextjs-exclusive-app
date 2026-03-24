@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 function Cart() {
   const { cart, updateQuantity, removeFromCart } = useCart();
   const [mounted, setMounted] = useState(false);
+  const { cartTotal } = useCart();
 
   // ✅ Prevent Hydration Mismatch
   useEffect(() => {
@@ -56,8 +57,8 @@ function Cart() {
               <Image
                 src={product.thumbnail}
                 alt={product.title}
-                width={50} // ✅ Fixed: Width prop is required
-                height={40} // ✅ Fixed: Height prop is required
+                width={50}
+                height={40} 
                 className="object-contain"
               />
               <span className="text-[16px] font-medium truncate">{product.title}</span>
@@ -164,6 +165,41 @@ function Cart() {
           </div>
         ))}
       </div>
+
+     <div className="py-30 flex justify-between">
+         <div className=" flex gap-16">
+        <div className="w-[300px] h-[56px] rounded-sm border flex items-center pl-4">
+          <p className="font-poppins font-normal text-[16px] leading-6">Coupon Code</p>
+        </div>
+        <button className="w-[211px] h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
+        Apply Coupon
+        </button>
+      </div>
+
+      <div className="w-[470px] h-[324px] border-[1.5px]  space-y-6 p-8 ">
+        <h3 className="font-poppins font-medium text-[20px] leading-7">Cart Total</h3>
+        <div className="flex items-center justify-between border-b">
+            <p className="font-poppins font-normal text-[16px] leading-6">Shipping:</p>
+            <p className="font-poppins font-normal text-[16px] leading-6">Free</p>
+        </div>
+        <div className="flex items-center justify-between border-b">
+            <p className="font-poppins font-normal text-[16px] leading-6">Subtotal:</p>
+            <p className="font-poppins font-normal text-[16px] leading-6">${cartTotal.toFixed(2)}</p>
+        </div>
+        <div className="flex items-center justify-between border-b">
+            <p className="font-poppins font-normal text-[16px] leading-6">Total:</p>
+            <p className="font-poppins font-normal text-[16px] leading-6">${cartTotal.toFixed(2)}</p>
+        </div>
+        <Link href={'/checkout'}>
+         <button className="w-[260px] h-[56px] rounded-sm bg-[#DB4444] font-medium font-poppins text-[16px] leading-6 text-white">
+        Apply Coupon
+        </button>
+        </Link>
+
+      </div>
+
+     </div>
+
     </div>
   );
 }

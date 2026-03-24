@@ -47,8 +47,13 @@ const ExploreOurProducts = () => {
         if (!response.ok) throw new Error("Failed to fetch");
         const result = await response.json();
         setData(result);
-      } catch (err: any) {
-        setError(err.message);
+      } catch (err: unknown) {
+        if(err instanceof Error){
+          setError(err.message)
+        } else {
+          setError("Something went wrong")
+        }
+  
       } finally {
         setLoading(false);
       }
@@ -60,21 +65,23 @@ const ExploreOurProducts = () => {
   if (loading) return <p className="text-center py-10">Loading...</p>;
 
   return (
-    <section className="max-w-[1170px] py-16 lg:px-0 px-4">
-      <div className="flex gap-3 items-center mb-4">
-        <div className="w-5 h-10 bg-red-500 rounded-sm"></div>
+    <section className="max-w-[1170px] lg:py-15 py-12 lg:px-0 px-4">
+      <div className="space-y-5">
+        <div className="flex gap-3 items-center ">
+       <div className="w-5 h-10 bg-red-500 rounded-sm"></div>
         <span className="text-red-500 font-semibold">Our Products</span>
       </div>
-      <h2 className="text-3xl font-bold mb-10">Explore Our Products</h2>
+      <h2 className="text-3xl font-bold mb-1">Explore Our Products</h2>
 
+      </div>
       {/* Grid for all products */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:py-20 py-15 items-center justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:py-12 mb-30 items-center justify-center">
         {data?.products.slice(10, 18).map((product: Product) => (
-          <div key={product.id} className="group flex flex-col gap-3">
+          <div key={product.id} className="group flex flex-col gap-3  ">
             
             {/* Gray Image Container */}
             <div className="relative w-full h-[250px] bg-[#f5f5f5] flex items-center justify-center rounded-sm overflow-hidden">
-              
+            
               {/* Top Action Buttons */}
               <div className="absolute top-3 right-3 flex flex-col gap-2 z-20">
                 <button 
@@ -101,7 +108,7 @@ const ExploreOurProducts = () => {
               </div>
 
               {/* Product Thumbnail */}
-              <div className="absolute inset-0 m-auto lg:w-[190px] w-full h-[180px] flex items-center justify-center">
+              <div className="absolute inset-0 m-auto lg:w-[190px] w-full h-[180px] flex items-center justify-center  ">
               <Link href={`/product/${product.id}`}>
                 <Image src={product.thumbnail} alt={product.title} width={150} height={150} className="object-contain" />
               </Link>
@@ -136,7 +143,7 @@ const ExploreOurProducts = () => {
         ))}
       </div>
 
-     <div className="flex items-center justify-center py-15 lg:py-20">
+     <div className="flex items-center justify-center lg:mb-0 mb-5 ">
         <Link href="/allProducts">
           <button className="w-[234px]  h-14 bg-primary rounded-sm text-white text-[16px] font-medium">
             View All Products

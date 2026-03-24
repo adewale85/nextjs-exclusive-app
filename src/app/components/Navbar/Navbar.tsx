@@ -6,7 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 import Dropdown from "./Dropdown";
 import { useState } from "react";
 import Sidebar from "../Sidebar/Sidebar";
-import Image from "next/image";
+
 
 // 1. Correct Imports for hooks
 import { useWishList } from "@/Provider/WishListContext";
@@ -31,8 +31,8 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-white border-b border-black/10">
       <div className="Wrapper lg:px-0 px-4  ">
         <div className="flex justify-between items-center pt-4 pb-2">
-          <div className="flex items-center gap-15">
-            <div className="lg:hidden">
+          <div className="flex  items-center gap-15">
+            <div className="lg:hidden relative">
               <Sidebar />
             </div>
             <li className="list-none font-inter font-bold text-[1.5rem] text-black">

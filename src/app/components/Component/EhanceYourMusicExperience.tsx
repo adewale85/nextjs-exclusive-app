@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const EhanceYourMusicExperience = () => {
   return (
-    <section className="">
+    <section className="lg:py-0 py-5">
      
         <div className="space-y-30 lg:space-y-0 lg:w-[1170px] w-full lg:h-[500px] h-[780px] bg-black   lg:mt-16  flex lg:flex-row flex-col items-center justify-center">
 

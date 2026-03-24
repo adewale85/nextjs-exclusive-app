@@ -59,7 +59,7 @@ function Products() {
   if (error) return <p className="text-center text-red-500 py-10">{error}</p>;
 
   return (
-    <div className="max-w-[1170px] mx-auto"> 
+    <div className="max-w-[1170px] mx-auto lg:px-0 px-4"> 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20  lg:py-15 py-12">
         {data?.products.map((product) => (
           <div key={product.id} className="group flex flex-col gap-3">

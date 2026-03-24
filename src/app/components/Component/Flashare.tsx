@@ -3,16 +3,12 @@ import Image from 'next/image';
 import { useCountdown } from '@/../src/app/utils/useCountdown';
 import Products from '../Products/Products';
 import Link from 'next/link';
+import Dots from './Dots';
 
 function Flashare() {
   const { days, hours, minutes, seconds } = useCountdown("2026-12-01");
 
-  const Dots = () => (
-    <div className="flex flex-col gap-1 mt-4">
-      <div className="w-1 h-1 bg-[#E07575] rounded-full"></div>
-      <div className="w-1 h-1 bg-[#E07575] rounded-full"></div>
-    </div>
-  );
+  
 
   return (
     <div className="  lg:pt-20 pt-20 lg:px-0 px-4 ">
@@ -23,7 +19,7 @@ function Flashare() {
         <div className="space-y-4">
           <div className="flex items-center gap-4">
             <div className="w-5 h-10 bg-red-500 rounded-sm"></div>
-            <span className="text-red-500 font-semibold">Today's</span>
+            <span className="text-red-500 font-semibold">Today&apos;s</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold">Flash Sales</h2>
         </div>
@@ -73,7 +69,7 @@ function Flashare() {
       <Products />
 
       {/* View All */}
-      <div className="flex items-center justify-center py-15 lg:py-20">
+      <div className="flex items-center justify-center py-10 lg:py-20">
         <Link href="/allProducts">
           <button className="w-[234px]  h-14 bg-primary rounded-sm text-white text-[16px] font-medium">
             View All Products
@@ -82,7 +78,7 @@ function Flashare() {
       </div>
 
       {/* Divider */}
-      <div className="border-b-[0.5px] opacity-30  mb-12"></div>
+      <div className="border-b-[0.5px] opacity-30  my-10"></div>
     </div>
   );
 }
