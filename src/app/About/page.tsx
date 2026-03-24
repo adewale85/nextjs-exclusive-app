@@ -43,7 +43,7 @@ function About() {
           {/* Optimized Image Container */}
           <div className="relative w-full lg:w-[705px] h-[400px] lg:h-[609px]">
             <Image
-              src="/images/Side Image2.svg"
+              src="/images/side-image2.svg"
               alt="Our Story Banner"
               fill
               priority
